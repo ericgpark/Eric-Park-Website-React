@@ -2,15 +2,17 @@ import NavMenu from './containers/NavMenu';
 import Hero from './containers/Hero';
 import Footer from './containers/Footer';
 import About from './containers/About';
+import Facts from './containers/Facts';
 
 const App = () => (
   <>
-    <NavMenu></NavMenu>
-    <Hero></Hero>
+    <NavMenu />
+    <Hero />
     <main id="main">
-      <About></About>
+      <About />
+      <Facts />
     </main>
-    <Footer></Footer>
+    <Footer />
   </>
 );
 
