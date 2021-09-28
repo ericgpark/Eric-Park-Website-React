@@ -1,3 +1,5 @@
+import Bullet from '../components/Bullet';
+
 const About = () => {
   return (
     <div id="about" className="about">
@@ -30,42 +32,18 @@ const About = () => {
             <div className="row">
               <div className="col-lg-6">
                 <ul>
-                  <li>
-                    <i className="icofont-rounded-right"></i>{' '}
-                    <strong>Birthday:</strong> 22 March 1997
-                  </li>
-                  <li>
-                    <i className="icofont-rounded-right"></i>{' '}
-                    <strong>Phone:</strong> +714 980 0080
-                  </li>
-                  <li>
-                    <i className="icofont-rounded-right"></i>{' '}
-                    <strong>City:</strong> Westminster, California
-                  </li>
-                  <li>
-                    <i className="icofont-rounded-right"></i>{' '}
-                    <strong>Age:</strong> 24
-                  </li>
+                  <Bullet point="Birthday: " info="22 March 1997" />
+                  <Bullet point="Phone: " info="714 980 0080" />
+                  <Bullet point="City: " info="Los Angeles, CA" />
+                  <Bullet point="Age: " info="24" />
                 </ul>
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li>
-                    <i className="icofont-rounded-right"></i>{' '}
-                    <strong>GPA:</strong> 3.2
-                  </li>
-                  <li>
-                    <i className="icofont-rounded-right"></i>{' '}
-                    <strong>Degree:</strong> BS Computer Science
-                  </li>
-                  <li>
-                    <i className="icofont-rounded-right"></i>{' '}
-                    <strong>Email:</strong> ericparkmusic@gmail.com
-                  </li>
-                  <li>
-                    <i className="icofont-rounded-right"></i>{' '}
-                    <strong>Freelance:</strong> Available
-                  </li>
+                  <Bullet point="GPA: " info="3.2" />
+                  <Bullet point="Degree: " info="B.S. Computer Science" />
+                  <Bullet point="Email: " info="ericparkmusic@gmail.com" />
+                  <Bullet point="Freelance: " info="Available" />
                 </ul>
               </div>
             </div>
