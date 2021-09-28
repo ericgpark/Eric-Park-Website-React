@@ -1,13 +1,15 @@
 import NavMenu from './containers/NavMenu';
 import Hero from './containers/Hero';
-import MainContainer from './containers/MainContainer';
 import Footer from './containers/Footer';
+import About from './containers/About';
 
 const App = () => (
   <>
     <NavMenu></NavMenu>
     <Hero></Hero>
-    <MainContainer></MainContainer>
+    <main id="main">
+      <About></About>
+    </main>
     <Footer></Footer>
   </>
 );
