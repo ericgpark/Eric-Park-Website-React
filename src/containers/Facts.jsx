@@ -1,3 +1,5 @@
+import Fact from '../components/Fact';
+
 const Facts = () => {
   return (
     <section id="facts" className="facts">
@@ -12,37 +14,26 @@ const Facts = () => {
         </div>
 
         <div className="row">
-          <div className="col-lg-3 col-md-6">
-            <div className="count-box">
-              <i className="icofont-code-alt"></i>
-              <span data-toggle="counter-up">5</span>
-              <p>Open-Source Organizations</p>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div className="count-box">
-              <i className="icofont-gears"></i>
-              <span data-toggle="counter-up">30</span>
-              <p>Technologies and Counting</p>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div className="count-box">
-              <i className="icofont-ui-folder"></i>
-              <span data-toggle="counter-up">207</span>
-              <p>Public Contributions in the last 3 months</p>
-            </div>
-          </div>
-
-          <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div className="count-box">
-              <i className="icofont-star"></i>
-              <span data-toggle="counter-up">946</span>
-              <p>Github Stars and Counting (Spearmint)</p>
-            </div>
-          </div>
+          <Fact
+            iconClass="icofont-code-alt"
+            factCount={5}
+            factName="Open-Source Organizations"
+          />
+          <Fact
+            iconClass="icofont-gears"
+            factCount={30}
+            factName="Technologies and Counting"
+          />
+          <Fact
+            iconClass="icofont-ui-folder"
+            factCount={207}
+            factName="Public contributions in the last 3 months"
+          />
+          <Fact
+            iconClass="icofont-star"
+            factCount={949}
+            factName="Github Stars and Counting (Spearmint)"
+          />
         </div>
       </div>
     </section>
