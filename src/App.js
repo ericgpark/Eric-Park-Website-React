@@ -10,8 +10,8 @@ import Contact from './containers/Contact';
 
 const App = () => (
   <>
-    <button type="button" class="mobile-nav-toggle d-xl-none">
-      <i class="icofont-navigation-menu"></i>
+    <button type="button" className="mobile-nav-toggle d-xl-none">
+      <i className="icofont-navigation-menu"></i>
     </button>
 
     <NavMenu />
@@ -25,6 +25,7 @@ const App = () => (
       <Contact />
     </main>
     <Footer />
+    <div id="preloader"></div>
   </>
 );
 
