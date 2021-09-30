@@ -2,7 +2,7 @@ import Link from '../components/Link';
 
 const Footer = () => (
   <footer id="footer">
-    <div className="container">
+    <section className="container">
       <p>
         From the bottom of my heart, thank you for taking the time to look
         through my portfolio website.
@@ -20,7 +20,7 @@ const Footer = () => (
         />
       </div>
       <div className="credits">Designed by Eric Park</div>
-    </div>
+    </section>
   </footer>
 );
 

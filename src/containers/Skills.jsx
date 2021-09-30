@@ -2,7 +2,7 @@ import Skill from '../components/Skill';
 
 const Skills = () => {
   return (
-    <div id="skills" className="skills section-bg">
+    <section id="skills" className="skills section-bg">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           <h2>Skills</h2>
@@ -27,7 +27,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

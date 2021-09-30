@@ -2,7 +2,7 @@ import Bullet from '../components/Bullet';
 
 const About = () => {
   return (
-    <div id="about" className="about">
+    <section id="about" className="about">
       <div className="container" data-aos="fade-up">
         <div className="section-title">
           <h2>About</h2>
@@ -55,7 +55,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
