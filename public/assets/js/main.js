@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 !(function ($) {
   'use strict';
 
@@ -180,7 +181,3 @@
     items: 1,
   });
 })(jQuery);
-
-var typed = new Typed('#typed', {
-  stringsElement: '#typed-strings'
-});
