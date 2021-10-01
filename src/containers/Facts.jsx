@@ -1,6 +1,35 @@
+import { useState } from 'react';
+import { Waypoint } from 'react-waypoint';
 import Fact from '../components/Fact';
 
 const Facts = () => {
+  const [facts, setFacts] = useState(<div>loading...</div>);
+
+  const handleWaypoint = () => {
+    setFacts(<div className="row">
+    <Fact
+      iconClass="icofont-code-alt"
+      factCount={5}
+      factName="Open-Source Organizations"
+    />
+    <Fact
+      iconClass="icofont-gears"
+      factCount={30}
+      factName="Technologies and Counting"
+    />
+    <Fact
+      iconClass="icofont-ui-folder"
+      factCount={207}
+      factName="Public contributions in the last 3 months"
+    />
+    <Fact
+      iconClass="icofont-star"
+      factCount={949}
+      factName="Github Stars and Counting (Spearmint)"
+    />
+  </div>);
+  }
+
   return (
     <section id="facts" className="facts">
       <div className="container" data-aos="fade-up">
@@ -12,29 +41,8 @@ const Facts = () => {
             any task at hand with confidence, teamwork, humility, and curiosity.
           </p>
         </div>
-
-        <div className="row">
-          <Fact
-            iconClass="icofont-code-alt"
-            factCount={5}
-            factName="Open-Source Organizations"
-          />
-          <Fact
-            iconClass="icofont-gears"
-            factCount={30}
-            factName="Technologies and Counting"
-          />
-          <Fact
-            iconClass="icofont-ui-folder"
-            factCount={207}
-            factName="Public contributions in the last 3 months"
-          />
-          <Fact
-            iconClass="icofont-star"
-            factCount={949}
-            factName="Github Stars and Counting (Spearmint)"
-          />
-        </div>
+        <Waypoint onEnter={handleWaypoint} />
+        {facts}
       </div>
     </section>
   );
