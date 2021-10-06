@@ -9,7 +9,7 @@ const Skills = () => {
           <p>
             Here are some of the languages and technologies in which I'm most
             confident. I am always seeking and learning new languages. <br />{' '}
-            I'm currently learning the language of Go!
+            I'm currently learning Python and Django!
           </p>
         </div>
 
